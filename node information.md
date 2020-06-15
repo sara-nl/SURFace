@@ -284,37 +284,59 @@ r1132n14
 r1132n15
 
 **GPU Nodes**
+
 Rack 1123
 r1123n7, r1123n4, r1123n5, r1123n2, r1123n3, 
+
 Rack 1122
 r1122n7, r1122n4, r1122n5, r1122n2, r1122n3
+
 Rack 1387
 r1387n7, r1387n4, r1387n5, r1387n2, r1387n3, r1387n0, r1387n1, 
+
 Rack 1386
 r1386n7, r1386n4, r1386n5, r1386n2, r1386n3, r1386n0
+
 rack 1385
 r1385n7, r1385n4, r1385n5, r1385n2, r1385n3, r1385n0, r1385n1
+
 rack 1384
 r1384n4, r1384n5, r1384n2, r1384n3, r1384n0
+
 rack 1391
 r1391n7, r1391n4, r1391n5, r1391n2, r1391n3, r1391n0, r1391n1
+
 Rack 1390
 r1390n7, r1390n4, r1390n5, r1390n2, r1390n3
+
 rack 1389
 r1389n7, r1389n4, r1389n5, r1389n2, r1389n3
+
 rack 1379
 r1379n7, r1379n4, r1379n5, r1379n2, r1379n3
 
 **GPU Partitions:**
+
 Name                           Timelimit Nodelist
+
 gpu                            5d        r1387n[0,1,4-5,7],r1386n[2,4-5,7],r1385n[0-5,7],r1384n[3-5]
+
 gpu_short                      1h        r1387n[0-2,4-5,7],r1386n[2,4-5,7],r1385n[0-5,7],r1384n[3-5]
+
 gpu_shared                     5d        r1387n[0,1,4-5,7],r1386n[2,4-5,7],r1385n[0-5,7],r1384n[3-5]
+
 gpu_shared_course              2d        r1387n[0-1,4-5,7],r1386n[2,4-5,7],r1385n[0-5,7],r1384n[4-5]
+
 gpu_titanrtx                   5d        r1123n[2-3,4-5,7],r1122n[2-3,4-5,7],r1384n0,r1390n[2-3,4-5,7],r1389n[2-3,4-5,7]
+
 gpu_titanrtx_short             1h        r1123n[2-3,4-5,7],r1122n[2-3,4-5,7],r1384n0,r1390n[2-3,4-5,7],r1389n[2-3,4-5,7],r1379n7
+
 gpu_titanrtx_shared            5d        r1123n[2-3,4-5,7],r1122n[2-3,4-5,7],r1384n0,r1390n[2-3,4-5,7],r1389n[2-3,4-5,7]
+
 gpu_titanrtx_shared_course     2d        r1123n[2-3,4-5,7],r1122n[2-3,4-5,7],r1384n0,r1390n[2-3,4-5,7],r1389n[2-3,4-5,7]
+
 gpu_shared_education           2d        r1387n2
+
 gpu_shared_jupyter             2h        r1387n[0,1,3-5,7], r1386[2,4-5,7],r1385n[0-5,7],r1384n[3-5]
+
 gpu_shared_soil                12h       r1384n3
