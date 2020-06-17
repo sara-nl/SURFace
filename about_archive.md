@@ -20,4 +20,4 @@ Wrapping this with some code that loops through all the values and unpacks in th
 
 Note that the NVIDIA power metric is in watts, not milliwatts. The naming is an artifact from the data collection and will be corrected in the near future.
 
-This file will be expanded with better explanations in the near future.
+This file will be expanded with further clarifications in the near future.
