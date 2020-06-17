@@ -8,10 +8,13 @@ The nvidia metrics are packed 64 bit values, this means to get the values from t
 
 To retrieve the values the following python code would unpack a value:
 
-  gpu1 = 0xFFFF & (val >> 0)
-  gpu2 = 0xFFFF & (val >> 16)
-  gpu3 = 0xFFFF & (val >> 32)
-  gpu4 = 0xFFFF & (val >> 48)
+    gpu1 = 0xFFFF & (val >> 0)
+    
+    gpu2 = 0xFFFF & (val >> 16)
+    
+    gpu3 = 0xFFFF & (val >> 32)
+    
+    gpu4 = 0xFFFF & (val >> 48)
 
 Note that the NVIDIA power metric is in watts, not milliwatts. The naming is an artifact from the data collection and will be corrected in the near future.
 
