@@ -10,7 +10,7 @@ from subprocess import Popen
 from subprocess import PIPE
 
 """ Constants """
-DATA_PATH = DATA_PATH + ""
+DATA_PATH = "/project/kristian/" #<should be directory path>
 QUERY_LIST = "querylist"
 #this is the start of the curl query that is constructed in the buildQuery(query) function
 CURL_START = "curl -s '145.101.32.28:9090/api/v1/query_range?query="
