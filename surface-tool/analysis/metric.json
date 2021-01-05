@@ -1,0 +1,51 @@
+{   
+
+        "node_disk_bytes_written": {
+            "title": "Disk bytes written",
+            "ylabel": "Bytes written",
+            "xlabel": "",
+            "savefig_title": "/disk_bytes_written/"
+        },
+        "node_disk_bytes_read": {
+            "title": "Disk bytes read",
+            "ylabel": "Bytes read",
+            "xlabel": "",
+            "savefig_title": "/disk_bytes_read/"
+        },
+        "node_load1": {
+            "title": "",
+            "ylabel": "Load1",
+            "xlabel": "",
+            "savefig_title": "/load1/"
+        },
+        "node_memory_Cached": {
+            "title": "Cached bytes",
+            "ylabel": "Bytes",
+            "xlabel": "",
+            "savefig_title": "/memory_cached/"
+        },
+        "node_memory_MemFree": {
+            "title": "",
+            "ylabel": "RAM utilization [%]",
+            "xlabel": "",
+            "savefig_title": "/memory_util/"
+        },
+        "node_memory_MemTotal": {
+            "title": "Total memory (RAM) capacity",
+            "ylabel": "Load1",
+            "xlabel": "",
+            "savefig_title": "/memory_total/"
+        },
+        "surfsara_power_usage": {
+            "title": "",
+            "ylabel": "Power consumption [W]",
+            "xlabel": "",
+            "savefig_title": "/surfsara_power_usage/"
+        },
+        "surfsara_ambient_temp": {
+            "title": "",
+            "ylabel": "Temperature [C]",
+            "xlabel": "",
+            "savefig_title": "/surfsara_ambient_temp/"
+        }
+}
