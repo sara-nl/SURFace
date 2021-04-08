@@ -13,25 +13,13 @@ import seaborn as sns
 from matplotlib.colors import LinearSegmentedColormap
 
 plt.rcParams.update({'font.size': 18})
-#plt.rcParams['text.usetex'] = True #Let TeX do the typsetting
-#plt.rcParams['text.latex.preamble'] = [r'\usepackage{sansmath}', r'\sansmath'] #Force sans-serif math mode (for axes labels)
-#plt.rcParams['font.family'] = 'sans-serif' # ... for regular text
-#plt.rcParams['font.sans-serif'] = 'Helvetica, Avant Garde, Computer Modern Sans serif' # Choose a nice font here
-
 
 racks = {
-"rack_10" : ["r10n" + str(i) for i in range(1,33)], 
-#"rack_11": ["r11n" + str(i) for i in range(1,33)],
+"rack_10" : ["r10n" + str(i) for i in range(1,33)],
 "gpu_rack_32": ["r32n" + str(i) for i in range(1,8)],
-#"gpu_rack_31": ["r31n" + str(i) for i in range(1,7)],
-#"gpu_rack_30" : ["r30n1", "r30n2", "r30n3", "r30n4", "r30n5", "r30n6", "r30n7"],
-#"gpu_rack_34" : ["r34n1", "r34n2", "r34n3", "r34n4", "r34n5", "r34n6", "r34n7"],
-#"gpu_rack_33" : ["r33n2", "r33n3", "r33n4", "r33n5", "r33n6"],
 }
 
 metrics = {"surfsara_ambient_temp": "Ambient Temperature"}
-#            "nvidia_gpu_temperature_celsius": "GPU Temperature",
-#            "nvidia_gpu_fanspeed_percent": "GPU Fanspeed"}
 
 # combine all the metrics specified above into a larger dataframe for the given node
 def get_metrics(path, node):
@@ -95,5 +83,3 @@ def draw_rack(rack, nodes):
 
 for rack, nodes in racks.items():
     draw_rack(rack, nodes)
-
-

@@ -12,7 +12,7 @@ import sys
 """
 
 
-DAS_PATH = "/var/scratch/lvs215/processed-surf-dataset/"
+DAS_PATH = "/path/to/processed-surf-dataset/"
 
 metric = sys.argv[1]
 ylabel = ""
@@ -105,19 +105,10 @@ def plot_violin(covid_val, non_covid_val, ax, title, ylabel):
         ('covid', 'non-covid'),
        ha='center', fontsize=22
     )
-    # Just for load1 plots
-    #max_covid_val = np.max(covid_val)
-    #max_non_covid_val = np.max(non_covid_val)
-    
-    #if max_covid_val > 400:
-        #ax.text(x=0-0.08, y=407, s=str(round(max_covid_val,1)), fontsize=16, color="black", va="center")
-    #if max_non_covid_val > 400:
-         #ax.text(x=1-0.08, y=407, s=str(round(max_non_covid_val, 1)), fontsize=16, color="black", va="center")
-
 
 fig, ax = plt.subplots(figsize=(HEIGHT, WIDTH), constrained_layout=True)
 
 plot_violin(covid_val=df_covid_vals, non_covid_val=df_non_covid_vals, ax=ax, title=title, ylabel=ylabel)
-plt.savefig("/home/cmt2002/cluster_analysis/plots/" + savefig_title, dpi=100)
+plt.savefig("./cluster_analysis/plots/" + savefig_title, dpi=100)
 
 print("Done!")

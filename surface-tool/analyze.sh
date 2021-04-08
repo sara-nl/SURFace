@@ -1,5 +1,5 @@
 #!/bin/sh
-DATA_PATH="/var/scratch/lvs215/processed-surf-dataset"
+DATA_PATH="path/to/processed-surf-dataset"
 METRIC="Undefined"
 
 while getopts m:p:n:r: option
@@ -13,4 +13,4 @@ r) RACKS=${OPTARG};;
 esac
 done
 
-python3 /home/cmt2002/surfsara-tool/main/main.py --path=$DATA_PATH --metric=$METRIC  --period=$PERIOD --nodes=$NODES --racks=$RACKS
+python3 ./surfsara-tool/main/main.py --path=$DATA_PATH --metric=$METRIC  --period=$PERIOD --nodes=$NODES --racks=$RACKS

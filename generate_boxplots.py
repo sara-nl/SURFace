@@ -5,8 +5,8 @@ import pandas as pd
 import seaborn as sns
 
 SHOW_PLOT = False
-DAS_PATH = "/var/scratch/lvs215/processed-surf-dataset/"
-SAVEFIG_PATH= "/home/cmt2002/surf-rack-plots/"
+DAS_PATH = "path/to/processed-surf-dataset/"
+SAVEFIG_PATH= "./surf-rack-plots/"
 FIGNAME = "rack_boxplots"
 
 def get_rack_nodes(df):
